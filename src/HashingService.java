@@ -35,7 +35,7 @@ public class HashingService {
     public static void main(String[] argV) throws Exception {
 
         final ScheduledExecutorService executor = Executors.newSingleThreadScheduledExecutor();
-        final int requestsSize = 100;
+        final int requestsSize = 5;
         final long startTimeStamp = System.currentTimeMillis();
 
         for (int i = 0; i < requestsSize; i++) {
@@ -51,5 +51,7 @@ public class HashingService {
             requestHash(executor, req);// PokeHashReq's default constructor has random valid values.
         }
         executor.shutdown();
+        executor.awaitTermination((requestsSize * REQUEST_RATE) + (500*requestsSize) , TimeUnit.MILLISECONDS);
+        System.out.println("Done.");
     }
 }

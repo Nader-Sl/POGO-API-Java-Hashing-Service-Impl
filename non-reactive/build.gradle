@@ -1,0 +1,10 @@
+ 
+if (!hasProperty('mainClass')) {
+    ext.mainClass = 'org.pogo.api.hashingservice.HashingService'
+}
+
+dependencies {
+ 
+    
+
+}

@@ -1,0 +1,11 @@
+ 
+// your own implementation.
+if (!hasProperty('mainClass')) {
+    ext.mainClass = ''
+}
+
+dependencies {
+   // https://mvnrepository.com/artifact/io.reactivex/rxjava
+compile group: 'io.reactivex', name: 'rxjava', version: '1.2.4'
+
+}

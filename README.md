@@ -1,10 +1,6 @@
-**A Full Java implementation + Throttle System for using the Hashing Service provided by Bossland to crack the POGO API.**
+**A Full Java implementation + Requests Throttling Demos for using the Hashing Service provided by Bossland to crack the POGO API.**
 
-* Throttle system is modular and will adapt based on your RPM package that needs to be defined in HashingService.java.
-* This implementation doesn't use any external libraries.
-* Make sure to buy a key from bossland's service and define itin HashingService.java to use it : https://talk.pogodev.org/d/51-api-hashing-service-by-pokefarmer
+The project is a Gradle build, it contains two subprojects, difference is one has a requests throttling demo using reactive programming (Java rx) while the other is just using the standard imperative programming, the throttling is done in an asynchronous manner, in the reactive project you can choose whether Async or Sync.
 
-Test output example running on 150 RPM package :
-![output](http://puu.sh/t2C82/d40bd44532.png)
 
 Have fun and don't forget to check out my one of a kind bot Hackemon! https://github.com/Nader-Sl/Hackemon
